@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
+/* document=html, elements=body, head, etc. */
+body{
+    font-family: 'Do Hyeon', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+div{
+    border: 1px solid black;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    margin: 2%;
+    padding: 2%;
+    display: inline-block;
+}
+/* universal, type, id, class, combination */
+/* descendant" ",
+ direct descendants">" 
+ All sibling selectors"~"
+ adjacent sibling selector"+"
+ or","
+ and".", "#"
+ */
+
+img{
+    height: 70%;
+}
+/* u can have sepearte classes by seperating them with a space," " */
+#h1{
+    color: darkgreen;
+    text-align: center;
+}
+/* whatever is more specific will be used  */
+.green{
+    background-color: lightgreen;
+}
+/* decendant of the element will be selected */
+/* all decendants not only the children */
+/* decendant selctor is a type of combination selctor */
+/* the descendant element will be selected using a space " " */
+
+/* ">" selects on the direct children */
+/* It is safer to style it as specific as possible */
+
+/* A general sibling selector */
+/* "~" this is used as a sibling selctor, selects all sibling, a general sibling selctor */
+/* For the adjacent sibling, we use "+"  */
+/* "h1+div", so yeah */
+
+/* or, if it is this or that */
+/* and, both this and this,".", "#" */
+
+
+/* pseudoclass, events or action or provisions */
+
+
+div:hover{
+    background-color: lightgreen;
+}
+/* when active it means when u click on it */
+div:active{
+    background-color:red;
+}
+
+/* div:first-child, it actually works,lol, */
+/* nth- child(the number) */
+/* to count form the last, nth-last-child */
+/* nth-child(2n), even blocks, (2n-1), odd blocks */
